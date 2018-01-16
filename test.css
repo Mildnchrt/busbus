@@ -1,0 +1,301 @@
+html {
+  height: 400px;
+  background: linear-gradient(to right, rgb(247, 204, 221), rgb(192, 207, 250));
+}
+button{
+  font-size: 22px;
+font-family: 'Poiret One', cursive;
+}
+html:hover {
+  transition: 2s;
+  background: linear-gradient(to right, rgb(233, 213, 252), rgb(190, 244, 239));
+}
+  .progress-pie-chart {
+
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+  }
+  .progress-pie-chart.gt-50 {
+  background-color: #81CE97;
+  }
+
+  .ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+  }
+  .ppc-progress .ppc-progress-fill {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #f7ada0;
+  transform: rotate(60deg);
+  }
+  .gt-50 .ppc-progress {
+  clip: rect(0, 100px, 200px, 0);
+  }
+  .gt-50 .ppc-progress .ppc-progress-fill {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+  }
+
+  .ppc-percents {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+  }
+  .ppc-percents span {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #f7ada0;
+  }
+
+  .pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  }
+
+  .progress-pie-chart {
+  margin: 50px auto 0;
+  }
+
+
+  #pbar {
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 235px;
+  }
+  #container {
+    height: 100%;
+    position: relative;
+  }
+
+  /*hexagon*/
+  #hexagon1 {
+    outline: none;
+    border-style: none;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 340px;
+  	width: 200px;
+  	height: 110px;
+  	background: #F2E4F9;
+  }
+  #hexagon1:before {
+  	content: "";
+  	position: absolute;
+  	top: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-bottom: 50px solid #F2E4F9;
+  }
+  #hexagon1:after {
+  	content: "";
+  	position: absolute;
+  	bottom: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-top: 50px solid #F2E4F9;
+  }
+  #hexagon1:hover {
+    background-color: #B0DACC;
+    transition: 0.7s;
+  }
+  #hexagon1:hover:before{
+    transition: 0.7s;
+  	border-bottom: 50px solid #B0DACC;
+  }
+  #hexagon1:hover:after{
+    transition: 0.7s;
+  	border-top: 50px solid #B0DACC;
+  }
+
+
+
+  #hexagon2 {
+    outline: none;
+    border-style: none;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 130px;
+  	width: 200px;
+  	height: 110px;
+  	background: #F8E8B5;
+  }
+  #hexagon2:before {
+  	content: "";
+  	position: absolute;
+  	top: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-bottom: 50px solid #F8E8B5;
+  }
+  #hexagon2:after {
+  	content: "";
+  	position: absolute;
+  	bottom: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-top: 50px solid #F8E8B5;
+  }
+  #hexagon2:hover {
+    background-color: #B0DACC;
+    transition: 0.7s;
+  }
+  #hexagon2:hover:before{
+    transition: 0.7s;
+  	border-bottom: 50px solid #B0DACC;
+  }
+  #hexagon2:hover:after{
+    transition: 0.7s;
+  	border-top: 50px solid #B0DACC;
+  }
+
+
+
+  #hexagon3 {
+    outline: none;
+    border-style: none;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 25px;
+  	width: 200px;
+  	height: 110px;
+  	background: rgb(184, 153, 200);
+  }
+  #hexagon3:before {
+  	content: "";
+  	position: absolute;
+  	top: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-bottom: 50px solid rgb(184, 153, 200);
+  }
+  #hexagon3:after {
+  	content: "";
+  	position: absolute;
+  	bottom: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-top: 50px solid rgb(184, 153, 200);
+  }
+  #hexagon3:hover {
+    background-color: #B0DACC;
+    transition: 0.7s;
+  }
+  #hexagon3:hover:before{
+    transition: 0.7s;
+  	border-bottom: 50px solid #B0DACC;
+  }
+  #hexagon3:hover:after{
+    transition: 0.7s;
+  	border-top: 50px solid #B0DACC;
+  }
+
+
+  #hexagon4 {
+    outline: none;
+    border-style: none;
+    position: absolute;
+    margin-top: 490px;
+    margin-left: 130px;
+  	width: 200px;
+  	height: 110px;
+  	background: #dfffc9;
+  }
+  #hexagon4:before {
+  	content: "";
+  	position: absolute;
+  	top: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-bottom: 50px solid #dfffc9;
+  }
+  #hexagon4:after {
+  	content: "";
+  	position: absolute;
+  	bottom: -50px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 100px solid transparent;
+  	border-right: 100px solid transparent;
+  	border-top: 50px solid #dfffc9;
+  }
+  #hexagon4:hover {
+    background-color: #B0DACC;
+    transition: 0.7s;
+  }
+  #hexagon4:hover:before{
+    transition: 0.7s;
+  	border-bottom: 50px solid #B0DACC;
+  }
+  #hexagon4:hover:after{
+    transition: 0.7s;
+  	border-top: 50px solid #B0DACC;
+  }
+
+
+/*name*/
+#name {
+  position: relative;
+}
+#bus {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 220px;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+
+}
+#group {
+  position: absolute;
+  margin-top: 385px;
+  margin-left: 200px;
+  font-size: 75px;
+  font: bold 12px/30px;
+  font-family: 'Dancing Script', cursive;
+}
